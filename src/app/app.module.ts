@@ -10,12 +10,18 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
+import { FooterComponent } from './components/shared/layout/footer/footer.component';
+import { HeaderComponent } from './components/shared/layout/modal/header/header.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
