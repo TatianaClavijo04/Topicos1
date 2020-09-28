@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
-// import { LayoutModule } from '../../../shared/layout/layout.module';
+import {LayoutModule} from '../../shared/layout/layout.module';
+
 
 
 @NgModule({
@@ -12,7 +13,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     HomePageRoutingModule,
-   // LayoutModule,
+    LayoutModule
 
   ],
   declarations: [HomeComponent],

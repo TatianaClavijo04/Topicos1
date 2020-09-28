@@ -18,10 +18,8 @@ registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FooterComponent,
-    HeaderComponent,
-    HomeComponent
+    AppComponent
+    // NotFoundComponent
   ],
   imports: [
     BrowserModule,
