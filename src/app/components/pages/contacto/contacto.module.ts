@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './home.component';
+import { ContactoComponent } from './contacto.component';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { ContactoPageRoutingModule } from './contacto-routing.module';
 import {LayoutModule} from '../../shared/layout/layout.module';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 
@@ -12,12 +12,12 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
   imports: [
     CommonModule,
     FormsModule,
-    HomePageRoutingModule,
+    ContactoPageRoutingModule,
     LayoutModule,
     NgZorroAntdModule,
 
   ],
-  declarations: [HomeComponent],
+  declarations: [ContactoComponent],
   exports: []
 })
-export class HomePageModule{}
+export class ContactoPageModule{}

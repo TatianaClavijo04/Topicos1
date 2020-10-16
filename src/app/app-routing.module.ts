@@ -12,6 +12,14 @@ const routes: Routes = [
         path: '',
         loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomePageModule),
         },
+      {
+        path: 'contacto',
+        loadChildren: () => import('./components/pages/contacto/contacto.module').then(m => m.ContactoPageModule),
+      },
+      {
+        path: 'retablos',
+        loadChildren: () => import('./components/pages/retablos/retablos.module').then(m => m.RetablosPageModule),
+      },
     ]
   },
   // {

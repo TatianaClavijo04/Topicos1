@@ -14,11 +14,13 @@ import { FooterComponent } from './components/shared/layout/footer/footer.compon
 import { HeaderComponent } from './components/shared/layout/modal/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
 
+
+
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
     // NotFoundComponent
   ],
   imports: [

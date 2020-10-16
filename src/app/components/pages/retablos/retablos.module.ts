@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './home.component';
+import { RetablosComponent } from './retablos.component';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { RetablosPageRoutingModule } from './retablos-routing.module';
 import {LayoutModule} from '../../shared/layout/layout.module';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 
@@ -12,12 +12,12 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
   imports: [
     CommonModule,
     FormsModule,
-    HomePageRoutingModule,
+    RetablosPageRoutingModule,
     LayoutModule,
     NgZorroAntdModule,
 
   ],
-  declarations: [HomeComponent],
+  declarations: [RetablosComponent],
   exports: []
 })
-export class HomePageModule{}
+export class RetablosPageModule{}
