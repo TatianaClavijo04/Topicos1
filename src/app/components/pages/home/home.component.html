@@ -1,0 +1,53 @@
+
+
+<nz-layout class="layout">
+  <nz-sider nzCollapsible nzBreakpoint="lg" [nzCollapsedWidth]="0">
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item>
+        <i nz-icon nzType="user"></i>
+
+        <a [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+          Inicio
+        </a>
+
+      </li>
+      <li nz-menu-item>
+        <i nz-icon nzType="video-camera"></i>
+
+        <a [routerLink]="['/retablos']" routerLinkActive="active-link">
+          Retablos
+        </a>
+      </li>
+      <li nz-menu-item>
+        <i nz-icon nzType="user"></i>
+
+        <a [routerLink]="['/contacto']" routerLinkActive="active-link">
+          Contacto
+        </a>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header></nz-header>
+    <p class="arte"> DIGITAL ART </p>
+
+    <nz-content>
+      <div class="inner-content">
+
+        <nz-carousel nzAutoPlay>
+          <div nz-carousel-content ><img alt="example" src="assets/img/logo.JPG" >
+          </div>
+
+          <div nz-carousel-content ><img alt="example" src="assets/img/logo2.jpg" >
+          </div>
+        </nz-carousel>
+
+
+
+
+      </div>
+    </nz-content>
+    <nz-footer><app-footer></app-footer></nz-footer>
+  </nz-layout>
+</nz-layout>

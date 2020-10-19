@@ -1,0 +1,55 @@
+<nz-layout class="layout">
+  <nz-sider nzCollapsible nzBreakpoint="lg" [nzCollapsedWidth]="0">
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item>
+        <i nz-icon nzType="user"></i>
+
+        <a [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+          Inicio
+        </a>
+
+      </li>
+      <li nz-menu-item>
+        <i nz-icon nzType="video-camera"></i>
+
+        <a [routerLink]="['/retablos']" routerLinkActive="active-link">
+          Retablos
+        </a>
+      </li>
+      <li nz-menu-item>
+        <i nz-icon nzType="user"></i>
+
+        <a [routerLink]="['/contacto']" routerLinkActive="active-link">
+          Contacto
+        </a>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header></nz-header>
+    <nz-content>
+      <div class="inner-content">
+
+
+        <nz-card nzTitle="Retablos">
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img1.jpg" >Paisajes que armonizan espacios y crean la sensaciòn de serenidad ideal para todo tu hogar.</div>
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img2.jpg" >Diseños alternativos para decorar tu hogar, dar un obsequio a tu pareja o remodelar tu negocio</div>
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img3.jpg" >Decoraciones simples ideales para tu sala, cuarto o comedor</div>
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img4.jpg" >Decora tus espacios con tu estilo y crea ese ambiente de hogar</div>
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img5.JPG" >Tripticos especiales para decorar tu sala, comedor o estudio</div>
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img6.JPG" >Retablos decorativos, escoge el diseño o fotografia que deseas </div>
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img7.jpg" >Retablos claroscuro, especiales para expresar sentimientos o emociones </div>
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img8.jpg" >Personaliza tus cuadros, hermosos retablos en vinilo ahesivo con tu estilo </div>
+          <div nz-card-grid [ngStyle]="gridStyle"><img alt="example" src="assets/img/img9.jpg" >Diseños de tu anime favorito,Goku ideal para los fanáticos de este fabuloso heroè de comics</div>
+
+        </nz-card>
+
+
+
+      </div>
+    </nz-content>
+    <nz-footer><app-footer></app-footer></nz-footer>
+  </nz-layout>
+</nz-layout>
+

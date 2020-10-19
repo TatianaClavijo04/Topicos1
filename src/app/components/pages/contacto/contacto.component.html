@@ -1,0 +1,48 @@
+<nz-layout class="layout">
+  <nz-sider nzCollapsible nzBreakpoint="lg" [nzCollapsedWidth]="0">
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item>
+        <i nz-icon nzType="user"></i>
+
+        <a [routerLink]="['/']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">
+          Inicio
+        </a>
+
+      </li>
+      <li nz-menu-item>
+        <i nz-icon nzType="video-camera"></i>
+
+        <a [routerLink]="['/retablos']" routerLinkActive="active-link">
+          Retablos
+        </a>
+      </li>
+      <li nz-menu-item>
+        <i nz-icon nzType="user"></i>
+
+        <a [routerLink]="['/contacto']" routerLinkActive="active-link">
+          Contacto
+        </a>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header></nz-header>
+    <nz-content>
+      <div class="inner-content" >
+
+        <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+          <nz-card-meta nzTitle="HAZ TU PEDIDO" nzDescription="Correo: Stclavijob@gmail.com" ></nz-card-meta>
+          <nz-card-meta nzTitle=" " nzDescription=" Telefono: 3162786863" ></nz-card-meta>
+          <nz-card-meta nzTitle=" " nzDescription="Envios a todo el Pais " ></nz-card-meta>
+        </nz-card>
+        <ng-template #coverTemplate>
+          <img alt="logo" src="assets/img/img10.jpg" >
+        </ng-template>
+
+
+      </div>
+    </nz-content>
+
+  </nz-layout>
+</nz-layout>
