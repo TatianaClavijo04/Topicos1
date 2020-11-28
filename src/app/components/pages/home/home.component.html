@@ -29,25 +29,28 @@
     </ul>
   </nz-sider>
   <nz-layout>
-    <nz-header></nz-header>
-    <p class="arte"> DIGITAL ART </p>
+    <nz-header>
+      <img alt="example" src="assets/img/da1.png" >
+    </nz-header>
+    <div class="inner-content">
+
+    </div>
 
     <nz-content>
-      <div class="inner-content">
+      <nz-carousel nzAutoPlay>
+        <div nz-carousel-content ><img alt="example" src="assets/img/banner.png" >
+        </div>
 
-        <nz-carousel nzAutoPlay>
-          <div nz-carousel-content ><img alt="example" src="assets/img/logo.JPG" >
-          </div>
+        <div nz-carousel-content ><img alt="example" src="assets/img/banner2.png" >
+        </div>
+      </nz-carousel>
 
-          <div nz-carousel-content ><img alt="example" src="assets/img/logo2.jpg" >
-          </div>
-        </nz-carousel>
-
-
-
-
-      </div>
     </nz-content>
+
     <nz-footer><app-footer></app-footer></nz-footer>
+
+
+
   </nz-layout>
+
 </nz-layout>

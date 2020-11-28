@@ -1,2 +1,8 @@
 [1014/225851.995:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [1016/150029.740:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1112/113030.259:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1112/145245.732:ERROR:process_info.cc(329)] VirtualQueryEx: Acceso denegado. (0x5)
+[1112/145245.732:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[1112/145245.747:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[1112/145245.747:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)
+[1125/174034.466:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)

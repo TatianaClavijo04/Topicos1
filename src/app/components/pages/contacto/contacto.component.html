@@ -28,21 +28,87 @@
   </nz-sider>
   <nz-layout>
     <nz-header></nz-header>
-    <nz-content>
-      <div class="inner-content" >
+    <div class="contactoF" nz-row>
+      <div>
+        <nz-content>
+          <div class="inner-content" >
 
-        <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
-          <nz-card-meta nzTitle="HAZ TU PEDIDO" nzDescription="Correo: Stclavijob@gmail.com" ></nz-card-meta>
-          <nz-card-meta nzTitle=" " nzDescription=" Telefono: 3162786863" ></nz-card-meta>
-          <nz-card-meta nzTitle=" " nzDescription="Envios a todo el Pais " ></nz-card-meta>
-        </nz-card>
-        <ng-template #coverTemplate>
-          <img alt="logo" src="assets/img/img10.jpg" >
-        </ng-template>
+            <nz-card style="width:800px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+              <nz-card-meta nzTitle="RETABLOS" nzDescription="Estos retablos manejan una excelente calidad en cuanto a materiales, puesto que la madera no se va a deteriorar y la mayoría de las impresiones le permitirá limpiarla garantizando la calidad de la imagen. Pixelart tiene el placer de ofrecerle la posibilidad de adquirir cualquier obra de arte, pintura o retrato que siempre deseó, a un precio muy económico y en la mejor calidad." ></nz-card-meta>
+              <nz-card-meta nzTitle=" " nzDescription=" Retablo: Madera" ></nz-card-meta>
+              <nz-card-meta nzTitle=" " nzDescription="Impresion: Vinilo Adhesivo,Fotografico " ></nz-card-meta>
+            </nz-card>
+            <ng-template #coverTemplate>
+              <img alt="logo" src="assets/img/img14.png" >
+            </ng-template>
+          </div>
+        </nz-content>
+      </div>
+
+      <div >
+
+        <nz-content>
+          <div class="inner-content1" >
+
+            <nz-card style="width:800px;" [nzCover]="coverTemplate1" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+              <nz-card-meta nzTitle="CONTACTANOS" nzDescription="Correo: Stclavijob@gmail.com" ></nz-card-meta>
+              <nz-card-meta nzTitle=" " nzDescription=" Telefono: 3162786863" ></nz-card-meta>
+              <nz-card-meta nzTitle=" " nzDescription="Envios a todo el Pais " ></nz-card-meta>
+
+            </nz-card>
+            <ng-template #coverTemplate1>
+              <img alt="logo3"  style="width:850px;"  src="assets/img/img13.png" >
+            </ng-template>
+          </div>
+        </nz-content>
 
 
       </div>
-    </nz-content>
+      <a href="https://instagram.com/digitalart_one?igshid=11hsl977m2kti" target="_blank"><img src="assets/img/12.png" ></a>
+      <a href="https://www.facebook.com/enespanol/" target="_blank"><img src="assets/img/f1.png" ></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img src="assets/img/t1.png" ></a>
 
-  </nz-layout>
+      <div>
+
+
+      </div>
+
+    </div>
+
+
+    </nz-layout>
+  <form nz-form class="pedidoF">
+    <div class="logo2"><img src="assets/img/pedi2.png"></div>
+
+    <nz-form-item>
+    <nz-form-label> </nz-form-label>
+    </nz-form-item>
+
+    <nz-form-item class="formularioA">
+      <nz-form-label nzRequired class="colorF">Nombre</nz-form-label>
+        <input  nz-input placeholder="Nombre" />
+    </nz-form-item>
+    <nz-form-item class="formularioA">
+      <nz-form-label nzRequired>Apellido</nz-form-label>
+      <input nz-input placeholder="Apellido" />
+    </nz-form-item>
+    <nz-form-item class="formularioA">
+      <nz-form-label nzRequired>Correo</nz-form-label>
+      <input nz-input placeholder="Correo" />
+    </nz-form-item>
+    <nz-form-item class="formularioA">
+      <nz-form-label nzRequired>Telefono</nz-form-label>
+      <input nz-input placeholder="Telefono" />
+    </nz-form-item>
+    <nz-form-item class="formularioA">
+      <nz-form-label nzRequired>Asunto</nz-form-label>
+      <input nz-input placeholder="Asunto" />
+    </nz-form-item>
+    <nz-form-item class="formularioA">
+      <nz-form-label nzRequired>Mensaje</nz-form-label>
+      <input nz-input placeholder="Mensaje" />
+    </nz-form-item>
+    <button nz-button nzType="primary" onclick="window.location.href='/http://192.168.56.1:4600/#/contacto'">Enviar</button>
+  </form>
+
 </nz-layout>
